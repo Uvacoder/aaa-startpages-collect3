@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Moritz Klack - Interactive Developer, Data Visualisations, Maps, Web Apps</title>
+  <meta name="description" content="Moritz develops interactive data visualisations, web apps and map applications">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Source+Sans+Pro:400" rel="stylesheet">
+  <style>
+    ::-moz-selection {
+      color: white;
+      background: #741e80;
+    }
+
+    ::selection {
+      color: white;
+      background: #741e80;
+    }
+
+    * {
+      box-sizing:border-box;
+    }
+
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      line-height: 1.4;
+      background: #fefefe;
+    }
+
+    html, body {
+      margin:0;
+      padding:0;
+      height: 100%;
+    }
+
+    p {
+      margin: 0;
+      max-width: 600px;
+    }
+
+    a {
+      color: #741e80;
+      text-decoration: none;
+      transition: background .2s, color .2s;
+    }
+
+    .content a:hover {
+      background: #741e80;
+      color: white;
+    }
+
+    header {
+      background: #741e80;
+      background: linear-gradient(to bottom, #741e80 0%,#1a0521 100%);
+      color: #fff;
+      position: relative;
+    }
+
+    .header-content {
+      padding: 1.5rem 1rem;
+    }
+
+    .header-content a {
+      color: #fff;
+    }
+
+    .content {
+      padding: 1rem;
+    }
+
+    .noise {
+      background: url('images/noise.png');
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      opacity: .08;
+    }
+
+    h1, h2 {
+      font-weight: 700;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .platforms {
+      color: #680E78;
+      margin-top: 1rem;
+    }
+
+    .mail, .pgp {
+      display: inline-block;
+      opacity: .75;
+    }
+
+    h2 {
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      header {
+        background: #741e80;
+        background: linear-gradient(to bottom, #741e80 0%,#1a0521 100%);
+      }
+      h1, h2 {
+        font-size: 2rem;
+        display: block;
+      }
+      .mk {
+        display: flex;
+        height: 100%;
+      }
+      header {
+        width: 31%;
+        min-width: 300px;
+      }
+      .header-content, .content {
+        position: relative;
+        top: 15%;
+        padding: 1em;
+      }
+      .header-content {
+        text-align: right;
+      }
+      .mail, .pgp {
+        display: block;
+      }
+    }
+
+    @media (min-width: 1300px) {
+      h1, h2 {
+        font-size: 2.6rem;
+        margin-bottom: .1rem;
+      }
+      .header-content, .content {
+        top: 20%;
+        padding: 1em 2em;
+      }
+      p {
+        max-width: 720px;
+      }
+      p, a {
+        font-size: 1.2rem;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="mk">
+    <header>
+      <div class="noise"></div>
+      <div class="header-content">
+        <h1>Bill Lumberg</h1>
+
+        <div class="mail">
+          <a href="mailto:info@moritzklack.com">info@moritzklack.com</a>
+        </div>
+        <div class="pgp">
+          <a href="https://pgp.mit.edu/pks/lookup?op=get&search=0x59BC9757E2E6F88E">PGP: E2E6F88E</a>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="content">
+        <h2>Interactive Developer</h2>
+
+        <p>
+          I make data visualizations and rich web applications.
+          I have been working with journalists and newsrooms for several years now.
+          Furthermore, I contribute to <a href="https://github.com/moklick">open source projects</a>, write <a href="https://webkid.io/blog">blog posts</a> and run <a href="https://webkid.io">webkid.io</a>.
+        </p>
+        
+        <br />
+        
+        <p>
+          Currently I am working on <a href="https://datablocks.pro">datablocks</a> and <a href="https://reactflow.dev">reactflow</a>. Datablocks is a flow-based tool for processing, analyzing and visualizing data. React Flow is the underlying library for creating flow-based editors.  
+        </p>
+
+        <div class="platforms">
+          <a href="https://twitter.com/moklick">twitter</a> ·
+          <a href="https://github.com/moklick">github</a> · 
+          <a href="https://keybase.io/moklick">keybase</a> · 
+          <a href="https://codepen.io/moklick">codepen</a> ·
+          <a href="http://cctv-everywhere-blog.tumblr.com/">tumblr</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
