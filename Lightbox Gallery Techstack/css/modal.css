@@ -1,0 +1,135 @@
+/* ====== MODAL ====== */
+.modal-wrap{
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #000000ca;
+    transform: translate(-50%, -50%);
+}
+
+.modal-wrap span{
+    top: 0%;
+    right: 1%;
+    cursor: pointer;
+    color: #fff6ee;
+    font-size: 2.6rem;
+    user-select: none;
+    position: absolute;
+    transition: all 0.2s ease;
+    text-shadow: 0 0 10px #000000;
+}
+
+.modal-wrap span:hover{
+    font-size: 3rem;
+    color: #f48686;
+}
+
+.modal-wrap .modal{
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    position: relative;
+    border-radius: 20px;
+    border: 10px solid #fff6ee;
+    box-shadow: 0 0 20px #000000;
+    transform: translate(-50%, -50%);
+}
+
+.modal-wrap .modal img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    object-position: center;
+}
+
+/* ====== CONTORLS ====== */
+button{
+    top: 50%;
+    transform: translateY(-50%);
+} 
+
+button.prev, button.next{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+} 
+
+button.prev{
+    border: 0;
+    left: 14%;
+    z-index: 2;
+    position: absolute;
+} 
+
+button.next{
+    border: 0;
+    z-index: 2;
+    right: 14%;
+    position: absolute;
+} 
+
+button .material-icons{
+    outline: none;
+    font-size: 3rem;
+    color: #ffffff;
+    user-select: none;
+    border-radius: 50%;
+    background: #dddddd8a;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 8px #444444;
+    transition: all 0.2s ease-in-out;
+} 
+
+button .material-icons:hover{
+    font-size: 4rem;
+    background: #ffffffaa;
+    border: 2px solid #30cfff;
+    -webkit-text-stroke: 2px #30cfff;
+} 
+
+button .material-icons:active{
+    font-size: 4rem;
+    background: #ffffff8a;
+    border: 4px solid #eec200;
+    -webkit-text-stroke: 2px #eec200;
+}
+
+/* ====== INDICATORS  ====== */
+.indicator{
+    top: 84%;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    bottom: 10px;
+    display: flex;
+    list-style: none;
+    position: absolute;
+    text-decoration: none;
+    transform: translate(-50%);
+}
+.indicator li{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 50%;
+    background: transparent;
+    transition: all 0.2s ease;
+    border: 2px solid #fff6ee;
+    box-shadow: 0 2px 8px #222222;
+}
+
+.indicator li.selected{
+    background: #88def8;
+}   
+
+/* ==== Indicator STATES ==== */
+.indicator li:hover{
+    background: #88def8aa;
+}  
