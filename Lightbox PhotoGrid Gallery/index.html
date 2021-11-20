@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A fully responsive CSS Grid 'lightbox' photo gallery
+     with accessibility using tab key, plus accessible image search function">
+    <link rel="stylesheet" href="css/style.css">
+    <title>| Project 5 | Photo Gallery |</title>
+</head>
+<body>
+    
+    <main>
+        <div class="search">
+            <!-- Create search box and call JS function for match-checking -->
+           <input class = "searchBox" type = "text" name = "search" id = "search" onkeyup = "searchKeywords()" placeholder="Search using keywords">
+        </div>  
+        <div class="container_thumbnails" tabindex="0">
+            <!-- app.js loads photos and data from images folder  -->
+        </div>  
+    </main>   
+
+    
+    
+    <script src="js/baguetteBox.js"></script>   
+    <script src="js/app.js"></script>
+</body>
+</html>
