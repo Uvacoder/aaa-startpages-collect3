@@ -1,0 +1,164 @@
+:root {
+  font-family: 'Exo 2', sans-serif;
+  font-size: calc(.85rem + .45vw);
+  color: #fff;
+  background: #212121;
+  line-height: 1.4;
+  //  text-shadow: 0 1px .25rem rgba(#212121, .75);
+  cursor: none;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 0;
+}
+h1, h2, h3, strong {
+  font-weight: 900;
+  font-style: italic;
+}
+
+body {
+  position: relative;
+  z-index: -2;
+  background-image: linear-gradient(-160deg, #00dbdb, #d104c7);
+  background-size: 100% 100%;
+}
+
+.kontainer {
+  overflow: hidden;
+}
+
+.title {
+  margin-top: 0;
+  position: relative;
+  z-index: -1;
+}
+.fdi {
+  position: absolute;
+  top: 5.5rem;
+  left: 3.6rem;
+  pointer-events: none;
+  //outline: 10px solid pink;
+  i {
+    position: absolute;
+    display: block;
+    transform: rotate(var(--rotation));
+  }
+
+  span {
+    position: absolute;
+    display: block;
+    width: .15rem;
+    height: .25rem;
+    will-change: transform;
+    background-color: var(--color);
+    animation: fliegen calc(5s * var(--rnd)) infinite cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  }
+}
+
+@keyframes fliegen {
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(calc(40vh + 50vh * var(--rnd))) rotateZ(calc(1060deg * var(--rnd))); 
+  }
+}
+
+a {
+  color: white;
+
+  &::after {
+    position: relative;
+    top: -.2em;
+    content: '➚';
+    display: inline-block;
+    margin-left: 0.3em;
+    font-size: .75em;
+  }
+  &:hover {
+    text-decoration: none;
+  } 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  margin-top: 1.5em;
+  margin-bottom: 1rem;
+  margin-left: -1rem;
+}
+
+body {
+  font-weight: 100;
+  min-height: 100vh;
+}
+
+.l-design-width {
+  max-width: 40rem;
+  margin: 1rem auto;
+  padding: 2rem;
+  box-sizing: border-box; 
+  background-repeat: 10px; 
+}
+
+p, img {
+  max-width: 20rem;
+}
+
+img {
+  max-width: 12rem;
+  display: block;
+  margin-top: 1rem;
+  margin-left: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+details {
+  margin-top: 1em;
+  p {
+    margin-left: 1.4em;
+  }
+}
+
+summary {
+  font-size: 1.2em;
+  margin-bottom: .25em;
+  &:focus {
+    outline: none;
+  }
+}
+
+.outro {
+  margin-top: 4rem;
+}
+.logo {
+  display: block;
+  width: 7rem;
+  svg {
+    width: 100%;
+    height: auto;
+    fill: #fff;
+  }
+  transform: translate(-3rem, 1rem) rotate(-20deg);
+}
+
+.cursor {
+  position: absolute;
+  top: -10px;
+  left: -8px;
+  width: 2rem;
+  pointer-events: none;
+  will-change: transform;
+  
+  svg {
+    width: 100%;
+    height: auto;
+    fill: #fff;
+    transform: rotate(-50deg);
+  }
+}
