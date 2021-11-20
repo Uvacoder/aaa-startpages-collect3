@@ -1,0 +1,37 @@
+
+//set up thumbnails gallery grid
+body{
+    background-color: rgb(223, 223, 223);
+}
+
+main {
+    display: grid;    
+    grid-template-columns: 100%;
+    
+}
+
+.container_thumbnails {
+    display: grid;
+    width: 80%;
+    max-width: 1500px;
+    padding: 1rem;
+    margin: 2em auto;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+// add accessibility
+// tab highlight
+
+.thumbnail{
+    width: 100%;
+    height: 100%;
+    &:hover, &:focus{
+        border: black solid 3px;                
+        transform: scale(1.05);
+    }
+}
+
+
+
+

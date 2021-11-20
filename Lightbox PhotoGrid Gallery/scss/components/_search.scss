@@ -1,0 +1,28 @@
+//styles for the search box + accessibility
+
+
+.search{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+// add accessibility
+
+.searchBox {
+    width: 50%;
+    height: 3rem;   
+    margin: 2rem auto;
+    background-color: black;
+    color: white;
+    font-size: large;
+    border-radius: 10px;
+    font-weight: bold;
+    &:hover, &:focus{
+        background-color: white;
+        color: black;
+        border: 5px solid black;
+     
+    }
+}
+
