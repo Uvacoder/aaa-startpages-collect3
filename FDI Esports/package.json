@@ -1,0 +1,25 @@
+{
+  "name": "fdi-esports",
+  "version": "1.0.0",
+  "description": "website für FDI",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meodai/fdi-esports.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meodai/fdi-esports/issues"
+  },
+  "homepage": "https://github.com/meodai/fdi-esports#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.5"
+  }
+}
