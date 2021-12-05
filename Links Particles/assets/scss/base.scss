@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* Variable Decleration */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #191627;
+  color: #fbfbfe;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fbfbfe;
+}
+
+.hover-underline {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #fbfbfe;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform .25s ease-out;
+  transition: -webkit-transform .25s ease-out;
+  transition: transform .25s ease-out;
+  transition: transform .25s ease-out, -webkit-transform .25s ease-out;
+}
+
+.hover-underline:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.main-section {
+  padding: 50px 0;
+}
+
+.profile-picture {
+  display: block;
+  height: auto;
+  width: 128px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+.profile-name {
+  padding: 15px 0 15px 0;
+}
+
+.links {
+  display: block;
+  width: 200px;
+  margin: 1.25rem auto 0 auto;
+  padding: .5rem 2rem;
+  background: #3d2c8d;
+  border: 2px solid #3d2c8d;
+  border-radius: 25px 0;
+  color: #fbfbfe;
+  font-size: .85rem;
+  cursor: pointer;
+  -webkit-transition: border-radius .4s;
+  transition: border-radius .4s;
+}
+
+.links .fas,
+.links .fab {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.links:hover {
+  background: #3d2c8d;
+  border-radius: 0 25px;
+  color: #fbfbfe;
+}
+
+.links:hover .fas,
+.links:hover .fab {
+  -webkit-transform: scale(1.35);
+          transform: scale(1.35);
+}
+
+.first-link {
+  margin-top: 0;
+}
+
+.bottom-text {
+  margin-top: 60px;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.legal {
+  font-size: .75rem;
+}
+/*# sourceMappingURL=base.css.map */
